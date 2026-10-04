@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Giftora - Made to Be Remembered. Customized gifts, wallets, bracelets and travel accessories.">
+  <title>Giftora | Made to Be Remembered</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <img src="assets/logo.jpg" alt="Giftora - Made to Be Remembered">
+      </a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#why">Why Giftora</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="#shop">Shop Gifts</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">PERSONALIZED GIFTS • MADE WITH LOVE</span>
+          <h1>Make every gift<br><em>worth remembering.</em></h1>
+          <p>Beautifully personalized gifts for birthdays, anniversaries, couples, friends and every special moment.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#shop">Explore Gifts</a>
+            <a class="btn btn-outline" href="#contact">Order on WhatsApp</a>
+          </div>
+          <div class="trust-row">
+            <span>✦ Personalized</span>
+            <span>✦ Gift-ready</span>
+            <span>✦ Pan-India delivery</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/mens-wallet.jpg" alt="Customized Giftora men's wallet">
+          <div class="hero-badge"><strong>₹350</strong><span>Featured offer</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container">
+        <div class="section-head centered">
+          <span class="eyebrow">SHOP BY STYLE</span>
+          <h2>Gifts with a personal touch</h2>
+        </div>
+        <div class="category-grid">
+          <a href="#shop" class="category"><span>👨</span><strong>Men's Gifts</strong><small>Wallets & combos</small></a>
+          <a href="#shop" class="category"><span>💖</span><strong>Couple Gifts</strong><small>Made for two</small></a>
+          <a href="#shop" class="category"><span>💍</span><strong>Personalized</strong><small>Names & initials</small></a>
+          <a href="#shop" class="category"><span>✈️</span><strong>Travel Gifts</strong><small>Passport & travel</small></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop" class="shop section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">GIFTORA COLLECTION</span>
+            <h2>Best-selling personalized gifts</h2>
+          </div>
+          <p>Choose a gift, add your name, and make it yours.</p>
+        </div>
+        <div class="product-grid">
+
+          <article class="product-card">
+            <div class="product-image"><img src="assets/mens-wallet.jpg" alt="Customized men's wallet"></div>
+            <div class="product-body">
+              <span class="tag">BEST SELLER</span>
+              <h3>Customized Men's Wallet</h3>
+              <p>Personalized name plate with premium finish.</p>
+              <div class="product-bottom"><strong>₹350</strong><button onclick="order('Customized Men\\'s Wallet', 350)">Order Now</button></div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image"><img src="assets/combo.jpg" alt="3 piece customized gift combo"></div>
+            <div class="product-body">
+              <span class="tag">COMBO OFFER</span>
+              <h3>3-Piece Gift Combo</h3>
+              <p>Wallet + elegant pen + personalized keychain.</p>
+              <div class="product-bottom"><strong>₹450</strong><button onclick="order('3-Piece Gift Combo', 450)">Order Now</button></div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image"><img src="assets/vegan-wallet.jpg" alt="Personalized vegan leather wallet"></div>
+            <div class="product-body">
+              <span class="tag">COUPLE FAVOURITE</span>
+              <h3>Personalized Vegan Leather Wallet</h3>
+              <p>Custom name engraving and elegant love design.</p>
+              <div class="product-bottom"><strong>₹350</strong><button onclick="order('Personalized Vegan Leather Wallet', 350)">Order Now</button></div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image"><img src="assets/travel-wallet.jpg" alt="Personalized travel wallet"></div>
+            <div class="product-body">
+              <span class="tag">TRAVEL</span>
+              <h3>Passport / Travel Wallet</h3>
+              <p>Stylish personalized travel companion in beautiful colours.</p>
+              <div class="product-bottom"><strong>₹350</strong><button onclick="order('Passport / Travel Wallet', 350)">Order Now</button></div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image"><img src="assets/name-bracelet.jpg" alt="Customized name bracelet"></div>
+            <div class="product-body">
+              <span class="tag">PERSONALIZED</span>
+              <h3>Customized Name Bracelet</h3>
+              <p>Choose your name and style for a meaningful everyday gift.</p>
+              <div class="product-bottom"><strong>₹300</strong><button onclick="order('Customized Name Bracelet', 300)">Order Now</button></div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image"><img src="assets/passport-cover.jpg" alt="Premium personalized passport cover"></div>
+            <div class="product-body">
+              <span class="tag">TRAVEL ESSENTIAL</span>
+              <h3>Premium Passport Cover</h3>
+              <p>Personalized cover available in multiple colours.</p>
+              <div class="product-bottom"><strong>₹300</strong><button onclick="order('Premium Passport Cover', 300)">Order Now</button></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="why">
+      <div class="container">
+        <div class="section-head centered">
+          <span class="eyebrow">WHY GIFTORA</span>
+          <h2>Because ordinary gifts are easy to forget.</h2>
+        </div>
+        <div class="why-grid">
+          <div><span>01</span><h3>Made personal</h3><p>Add names, initials or special details to make every gift unique.</p></div>
+          <div><span>02</span><h3>Gift-ready style</h3><p>Premium-looking products designed for birthdays, anniversaries and celebrations.</p></div>
+          <div><span>03</span><h3>Easy ordering</h3><p>Pick your product and place your customization request directly on WhatsApp.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="container offer-inner">
+        <div>
+          <span class="eyebrow">SPECIAL MOMENTS DESERVE SPECIAL GIFTS</span>
+          <h2>Personalize it. Gift it. Remember it.</h2>
+        </div>
+        <a class="btn btn-gold" href="#shop">Shop Collection</a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">LET'S CREATE YOUR GIFT</span>
+          <h2>Ready to make it personal?</h2>
+          <p>Send us the product name and the name/customization you want. We'll help you place the order.</p>
+          <a class="whatsapp" href="#" onclick="openWhatsApp(); return false;">💬 Order on WhatsApp</a>
+        </div>
+        <div class="contact-card">
+          <h3>Quick order</h3>
+          <label>Product</label>
+          <select id="quickProduct">
+            <option>Customized Men's Wallet</option>
+            <option>3-Piece Gift Combo</option>
+            <option>Personalized Vegan Leather Wallet</option>
+            <option>Passport / Travel Wallet</option>
+            <option>Customized Name Bracelet</option>
+            <option>Premium Passport Cover</option>
+          </select>
+          <label>Your name</label>
+          <input id="customerName" placeholder="Name for customization">
+          <label>Message</label>
+          <textarea id="customerMessage" rows="3" placeholder="Any colour, name or special request"></textarea>
+          <button class="btn btn-dark" onclick="quickOrder()">Send Order Request</button>
+          <small>WhatsApp number can be changed in <code>script.js</code>.</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><img src="assets/logo.jpg" alt="Giftora logo" class="footer-logo"><p>Made to Be Remembered.</p></div>
+      <div><strong>Quick links</strong><a href="#shop">Shop</a><a href="#why">Why Giftora</a><a href="#contact">Contact</a></div>
+      <div><strong>Categories</strong><a href="#shop">Men's Gifts</a><a href="#shop">Personalized Gifts</a><a href="#shop">Travel Gifts</a></div>
+    </div>
+    <div class="copyright">© 2026 Giftora. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
